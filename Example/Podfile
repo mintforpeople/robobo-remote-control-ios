@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'robobo-remote-control-ios_Example' do
+  pod 'robobo-remote-control-ios', :path => '../'
+
+  target 'robobo-remote-control-ios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
