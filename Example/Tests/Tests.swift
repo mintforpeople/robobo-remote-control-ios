@@ -1,5 +1,5 @@
 import XCTest
-import robobo-remote-control-ios
+import robobo_remote_control_ios
 
 class Tests: XCTestCase {
     

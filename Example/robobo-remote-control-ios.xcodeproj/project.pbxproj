@@ -14,6 +14,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		83918D42B8F6E02F43511B32 /* Pods_robobo_remote_control_ios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373090AF551A178FD0C82901 /* Pods_robobo_remote_control_ios_Tests.framework */; };
+		A0145E2C2297FE8900010E5A /* ProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145E2B2297FE8900010E5A /* ProxyTest.swift */; };
+		A0145E2E229802C700010E5A /* StatusSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145E2D229802C700010E5A /* StatusSender.swift */; };
+		A042A56A2296F28D00435BF4 /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = A042A5692296F28D00435BF4 /* modules.plist */; };
 		E40931BEC6F99316AC9FDFF6 /* Pods_robobo_remote_control_ios_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39C5FC274430003E11E100C /* Pods_robobo_remote_control_ios_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0286BD3862B4F0C4CE875580 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2819B3A53F53374193F708FC /* robobo-remote-control-ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "robobo-remote-control-ios.podspec"; path = "../robobo-remote-control-ios.podspec"; sourceTree = "<group>"; };
+		0286BD3862B4F0C4CE875580 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2819B3A53F53374193F708FC /* robobo-remote-control-ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "robobo-remote-control-ios.podspec"; path = "../robobo-remote-control-ios.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		373090AF551A178FD0C82901 /* Pods_robobo_remote_control_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robobo_remote_control_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E01691BA615F0714906351A /* Pods-robobo-remote-control-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robobo-remote-control-ios_Tests.debug.xcconfig"; path = "Target Support Files/Pods-robobo-remote-control-ios_Tests/Pods-robobo-remote-control-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F9CFDB73366227E7A7BC13C /* Pods-robobo-remote-control-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robobo-remote-control-ios_Tests.release.xcconfig"; path = "Target Support Files/Pods-robobo-remote-control-ios_Tests/Pods-robobo-remote-control-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,8 +46,11 @@
 		607FACE51AFB9204008FA782 /* robobo-remote-control-ios_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "robobo-remote-control-ios_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7136F992EAC8310D8FF06D58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7136F992EAC8310D8FF06D58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7A9632296BD140FB95F14671 /* Pods-robobo-remote-control-ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robobo-remote-control-ios_Example.debug.xcconfig"; path = "Target Support Files/Pods-robobo-remote-control-ios_Example/Pods-robobo-remote-control-ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A0145E2B2297FE8900010E5A /* ProxyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTest.swift; sourceTree = "<group>"; };
+		A0145E2D229802C700010E5A /* StatusSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSender.swift; sourceTree = "<group>"; };
+		A042A5692296F28D00435BF4 /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
 		C39C5FC274430003E11E100C /* Pods_robobo_remote_control_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robobo_remote_control_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DAE301181C16E75820DB4A /* Pods-robobo-remote-control-ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robobo-remote-control-ios_Example.release.xcconfig"; path = "Target Support Files/Pods-robobo-remote-control-ios_Example/Pods-robobo-remote-control-ios_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +83,6 @@
 				4E01691BA615F0714906351A /* Pods-robobo-remote-control-ios_Tests.debug.xcconfig */,
 				4F9CFDB73366227E7A7BC13C /* Pods-robobo-remote-control-ios_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,12 +110,15 @@
 		607FACD21AFB9204008FA782 /* Example for robobo-remote-control-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A042A5692296F28D00435BF4 /* modules.plist */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				A0145E2B2297FE8900010E5A /* ProxyTest.swift */,
+				A0145E2D229802C700010E5A /* StatusSender.swift */,
 			);
 			name = "Example for robobo-remote-control-ios";
 			path = "robobo-remote-control-ios";
@@ -213,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TQMHQSZL99;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TQMHQSZL99;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A042A56A2296F28D00435BF4 /* modules.plist in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -291,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-robobo-remote-control-ios_Example/Pods-robobo-remote-control-ios_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/robobo-framework-ios-pod/robobo_framework_ios_pod.framework",
 				"${BUILT_PRODUCTS_DIR}/robobo-remote-control-ios/robobo_remote_control_ios.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_framework_ios_pod.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/robobo_remote_control_ios.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0145E2C2297FE8900010E5A /* ProxyTest.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A0145E2E229802C700010E5A /* StatusSender.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,7 +494,10 @@
 			baseConfigurationReference = 7A9632296BD140FB95F14671 /* Pods-robobo-remote-control-ios_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = TQMHQSZL99;
 				INFOPLIST_FILE = "robobo-remote-control-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +512,10 @@
 			baseConfigurationReference = E5DAE301181C16E75820DB4A /* Pods-robobo-remote-control-ios_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = TQMHQSZL99;
 				INFOPLIST_FILE = "robobo-remote-control-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +529,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E01691BA615F0714906351A /* Pods-robobo-remote-control-ios_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = TQMHQSZL99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +540,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +554,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F9CFDB73366227E7A7BC13C /* Pods-robobo-remote-control-ios_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = TQMHQSZL99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

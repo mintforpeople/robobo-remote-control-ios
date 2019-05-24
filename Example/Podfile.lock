@@ -1,0 +1,24 @@
+PODS:
+  - robobo-framework-ios-pod (0.1.0)
+  - robobo-remote-control-ios (0.1.0):
+    - robobo-framework-ios-pod (~> 0.1.0)
+
+DEPENDENCIES:
+  - robobo-framework-ios-pod (~> 0.1.0)
+  - robobo-remote-control-ios (from `../`)
+
+SPEC REPOS:
+  https://github.com/mintforpeople/mint-podspec-repo.git:
+    - robobo-framework-ios-pod
+
+EXTERNAL SOURCES:
+  robobo-remote-control-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  robobo-framework-ios-pod: 455ab7e508c33628ecf8bdc9089b085857514471
+  robobo-remote-control-ios: acc7ecdb6ccfe177958d04dd450c5a80fe2900e3
+
+PODFILE CHECKSUM: 3245310d438838d39f825a27eae735f521702ae7
+
+COCOAPODS: 1.7.0
