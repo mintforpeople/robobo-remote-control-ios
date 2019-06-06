@@ -35,7 +35,7 @@ class CommandQueueProcessor: NSObject {
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(MAX_TIME_WITHOUT_COMMANDS_TO_SLEEP), target: self, selector: #selector(CommandQueueProcessor.periodicCommandReceptionCheck), userInfo: nil, repeats: true)
         timer.fire()
         queue = DispatchQueue(label: "CommandQueueProcessor", qos: .utility)
-        queue.async {
+        queue.sync {
             self.run()
         }
     }
