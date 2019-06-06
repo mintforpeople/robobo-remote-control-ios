@@ -25,7 +25,7 @@ public class CommandSanitizer: NSObject {
         }
     }
     
-    static func sanitize(_ input: String) -> String{
+    static public func sanitize(_ input: String) -> String{
         let regex = try? NSRegularExpression(pattern: "(?<=\\w\\w\\w\":)\\d++")
         
         let text:NSMutableString =  NSMutableString(string: input)
