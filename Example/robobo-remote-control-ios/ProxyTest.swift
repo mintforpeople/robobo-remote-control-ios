@@ -10,8 +10,10 @@ import robobo_remote_control_ios
 import robobo_framework_ios_pod
 
 class ProxyTest: NSObject, IModule, IRemoteControlProxy {
+    override init() {
+
+    }
     func startup(_ manager: RoboboManager) throws {
-        
     }
     
     func shutdown() throws {
@@ -27,12 +29,16 @@ class ProxyTest: NSObject, IModule, IRemoteControlProxy {
     }
     
     func notifyStatus(_ status: Status) {
-        print(status)
+        print(RoboboJSONEncoder().encodeStatus(status))
+        
     }
     
     func notifyResponse(_ response: Response) {
         print(response)
     }
     
+    func parseCommand(){
+        
+    }
 
 }

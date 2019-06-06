@@ -46,7 +46,7 @@ class ViewController: UIViewController, RoboboManagerDelegate {
         var c: Command = Command("TEST",0,[:])
         manager.log("COMMAND")
 
-        remote.queueCommand(c)
+        remote.queueCommand(RoboboJSONEncoder().decodeCommand( "{\"name\":\"MOVE\",\"parameters\":{},\"id\":2}"))
         manager.log("STATUS")
 
         stSender.sendStatus()

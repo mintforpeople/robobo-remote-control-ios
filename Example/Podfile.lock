@@ -1,6 +1,6 @@
 PODS:
   - robobo-framework-ios-pod (0.1.0)
-  - robobo-remote-control-ios (0.1.0):
+  - robobo-remote-control-ios (0.1.2):
     - robobo-framework-ios-pod (~> 0.1.0)
 
 DEPENDENCIES:
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   robobo-framework-ios-pod: 455ab7e508c33628ecf8bdc9089b085857514471
-  robobo-remote-control-ios: acc7ecdb6ccfe177958d04dd450c5a80fe2900e3
+  robobo-remote-control-ios: 40f43c84342b8c377ff52f35b4ed0a22b4d9988c
 
 PODFILE CHECKSUM: 3245310d438838d39f825a27eae735f521702ae7
 

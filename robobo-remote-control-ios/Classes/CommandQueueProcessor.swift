@@ -56,7 +56,7 @@ class CommandQueueProcessor: NSObject {
                         commandExecutor.executeCommand(command, remoteModule)
                         
                     } catch RemoteModuleError.commandExecutorNotFound{
-                        roboboManager.log("Command executor for \(command) not found", LogLevel.ERROR)
+                        roboboManager.log("Command executor for \(command.getName()) not found", LogLevel.ERROR)
                     } catch {
                         
                     }

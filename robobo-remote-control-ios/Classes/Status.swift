@@ -16,7 +16,10 @@ public class Status: Value {
         super.init()
     }
     
+
+    
     public func getName() -> String{
         return name
     }
 }
+

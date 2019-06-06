@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Command: NSObject {
+public class Command: NSObject, Codable {
     private var name: String
     private let id: Int
     private var parameters: [String:String]

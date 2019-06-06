@@ -17,6 +17,10 @@ public class Response: Value {
 
     }
     
+   
+    
+
+    
     public func getCommandId() -> Int{
         return commandId
     }
