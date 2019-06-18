@@ -44,7 +44,7 @@ class CommandQueueProcessor: NSObject {
     func run(){
         var i = 0
         while !interrupted {
-            sleep(1)
+            usleep(1000)
             var command: Command! 
             i = i+1
             
