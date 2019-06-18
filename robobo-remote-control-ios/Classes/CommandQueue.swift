@@ -10,6 +10,8 @@ import UIKit
 
 class CommandQueue: NSObject {
     var commands: [Command] = []
+    let commandLimit: Int = 1000
+    
     override init() {
         super.init()
         
@@ -18,7 +20,11 @@ class CommandQueue: NSObject {
     
     
     func put (_ command: Command){
+        if (commands.count < commandLimit){
         commands.append(command)
+        } else {
+            print("❌ Command queue full")
+        }
     }
     
     func take() throws -> Command{
