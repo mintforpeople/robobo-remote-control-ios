@@ -46,7 +46,9 @@ class ViewController: UIViewController, RoboboManagerDelegate {
         var c: Command = Command("TEST",0,[:])
         manager.log("COMMAND")
         do{
-        remote.queueCommand(try RoboboJSONEncoder().decodeCommand( "ADASASASA"))//{\"name\":\"MOVE\",\"parameters\":{},\"id\":2}"))
+            for i in 1...100{
+            remote.queueCommand(try RoboboJSONEncoder().decodeCommand( "{\"name\":\"MOVE\",\"parameters\":{},\"id\":2}"))
+            }
         }catch{
             print (error)
         }

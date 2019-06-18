@@ -35,8 +35,8 @@ class CommandQueueProcessor: NSObject {
     func start(){
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(MAX_TIME_WITHOUT_COMMANDS_TO_SLEEP), target: self, selector: #selector(CommandQueueProcessor.periodicCommandReceptionCheck), userInfo: nil, repeats: true)
         timer.fire()
-        queue = DispatchQueue(label: "CommandQueueProcessor", qos: .userInteractive)
-        queue.async {
+        queue = DispatchQueue(label: "CommandQueueProcessor", qos: .utility, attributes: .concurrent)
+        queue.async(flags: .barrier) {
             self.run()
         }
     }
