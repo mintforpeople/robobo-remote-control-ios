@@ -10,7 +10,7 @@ import UIKit
 
 class CommandQueue: NSObject {
     var commands: [Command] = []
-    let commandLimit: Int = 1000
+    let commandLimit: Int = 100
     
     override init() {
         super.init()
