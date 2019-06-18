@@ -35,8 +35,8 @@ class CommandQueueProcessor: NSObject {
     func start(){
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(MAX_TIME_WITHOUT_COMMANDS_TO_SLEEP), target: self, selector: #selector(CommandQueueProcessor.periodicCommandReceptionCheck), userInfo: nil, repeats: true)
         timer.fire()
-        queue = DispatchQueue(label: "CommandQueueProcessor", qos: .utility, attributes: .concurrent)
-        queue.async(flags: .barrier) {
+        queue = DispatchQueue(label: "commandQueue.processor", qos: .utility, attributes: .concurrent)
+        queue.async {
             self.run()
         }
     }
@@ -52,8 +52,10 @@ class CommandQueueProcessor: NSObject {
                 if ((!commandQueue.isEmpty())&&(!processing)){
                     //roboboManager.log("Command Queued")
                     processing = true
+                    try remoteModule.processQueue.sync {
+                        command = try commandQueue.take()
+                    }
                     
-                    command = try commandQueue.take()
                     do{
                         let commandExecutor: ICommandExecutor = try getCommandExecutor(command.getName())
                         commandExecutor.executeCommand(command, remoteModule)
@@ -99,7 +101,9 @@ class CommandQueueProcessor: NSObject {
         lastCommandReceptionTime = Date().millisecondsSince1970
         // roboboManager.changePowerModeTo(PowerMode.NORMAL)
         //roboboManager.log("Is empty? \(commandQueue.isEmpty())")
-        commandQueue.put(command)
+        remoteModule.processQueue.sync {
+            commandQueue.put(command)
+        }
     }
     
     @objc func periodicCommandReceptionCheck(){

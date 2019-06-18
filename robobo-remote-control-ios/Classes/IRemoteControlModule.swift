@@ -9,6 +9,7 @@
 import robobo_framework_ios_pod
 
 public protocol IRemoteControlModule: IModule {
+    var processQueue:DispatchQueue! { get }
     
     func registerCommand(_ commandName:String, _ module: ICommandExecutor)
     
