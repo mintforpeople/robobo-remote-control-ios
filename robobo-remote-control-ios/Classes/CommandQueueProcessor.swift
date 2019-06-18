@@ -16,6 +16,7 @@ class CommandQueueProcessor: NSObject {
     var lastCommandReceptionTime:Int = 0
     let MAX_TIME_WITHOUT_COMMANDS_TO_SLEEP: Int = 60 * 3
     var commandExecutors: [String: ICommandExecutor]!
+    var processing: Bool = false
 
     
     var queue: DispatchQueue!
@@ -43,12 +44,14 @@ class CommandQueueProcessor: NSObject {
     func run(){
         var i = 0
         while !interrupted {
+            sleep(1)
             var command: Command! 
             i = i+1
             
             do {
-                if (!commandQueue.isEmpty()){
+                if ((!commandQueue.isEmpty())&&(!processing)){
                     //roboboManager.log("Command Queued")
+                    processing = true
                     
                     command = try commandQueue.take()
                     do{
@@ -60,9 +63,11 @@ class CommandQueueProcessor: NSObject {
                     } catch {
                         
                     }
+                    processing = false
                 }
             } catch {
-                
+                processing = false
+
             }
             
         }
