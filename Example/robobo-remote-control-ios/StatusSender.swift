@@ -16,8 +16,8 @@ public class StatusSender: NSObject {
     
     public func sendStatus(){
         let st: Status = Status("Ah SD")
-        st.putContents("ori", "100")
-        st.putContents("orsdsi", "100")
+        //st.putContents("ori", "100")
+        //st.putContents("orsdsi", "100")
         remote.postStatus(st)
     }
 }
