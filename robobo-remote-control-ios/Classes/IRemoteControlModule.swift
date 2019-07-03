@@ -25,7 +25,7 @@ public protocol IRemoteControlModule: IModule {
     
     func unregisterRemoteControlProxy(_ proxy: IRemoteControlProxy)
     
-    func queueCommand(_ command: Command)
+    func queueCommand(_ command: RemoteCommand)
     
     func notifyConnection(_ connNumber: Int)
     

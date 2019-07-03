@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		07CE6E38DCA3CC568C21FA0D86971C7F /* RoboboManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE1CD8C2F6EFC440F1C54470687C39 /* RoboboManager.swift */; };
 		0D230EC3DABDB8EA4FEBEA92928780DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F336B5F19D320288D283EAD28FA34F /* Foundation.framework */; };
-		19EDA09FEBAAE5EF1721D09CDDE5C43E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E73F1FC812DE9EB7D5BB978866367 /* Command.swift */; };
+		19EDA09FEBAAE5EF1721D09CDDE5C43E /* RemoteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E73F1FC812DE9EB7D5BB978866367 /* RemoteCommand.swift */; };
 		1BE5C6341FC2435C99E291FD58F595DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3008DA8A2B276EB81DBFE692B41A1B4 /* Response.swift */; };
 		25867725C19C353E1D9CA46C063425E0 /* RemoteModuleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468DBA5791C5DDB913BF0D96A174AFD7 /* RemoteModuleError.swift */; };
 		316C20D90921A03A3BBDAFA587004D4B /* RemoteControlModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110D8253AEA05A22B699FE789477E1C /* RemoteControlModule.swift */; };
@@ -84,20 +84,20 @@
 		0C17D49211D8E9AF6AA2DA3E0310D629 /* robobo-framework-ios-pod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "robobo-framework-ios-pod-prefix.pch"; sourceTree = "<group>"; };
 		0C1EE036C3B903FA34B669A1EBC8F733 /* Pods-robobo-remote-control-ios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robobo-remote-control-ios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		12B8C43697C005BBD1075584ABCC3858 /* Pods-robobo-remote-control-ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robobo-remote-control-ios_Example.release.xcconfig"; sourceTree = "<group>"; };
-		143FEF7C49FC98EA7E11C409BAC7F084 /* robobo_remote_control_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = robobo_remote_control_ios.framework; path = "robobo-remote-control-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		143FEF7C49FC98EA7E11C409BAC7F084 /* robobo_remote_control_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = robobo_remote_control_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FC4311225EF4B6FF32679EC05409A9 /* Pods-robobo-remote-control-ios_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robobo-remote-control-ios_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		196C967945B014B503807FCCC809AB10 /* robobo-framework-ios-pod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "robobo-framework-ios-pod-Info.plist"; sourceTree = "<group>"; };
 		1EADD19829B9C88C4A972F0D586F1BEF /* IRemoteControlModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IRemoteControlModule.swift; path = "robobo-remote-control-ios/Classes/IRemoteControlModule.swift"; sourceTree = "<group>"; };
 		23E93E74FC09DD994A6267C0EAE8061B /* robobo-remote-control-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "robobo-remote-control-ios-umbrella.h"; sourceTree = "<group>"; };
 		285EC5BA48B10DB83FA00B11BD9974C0 /* CommandQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandQueue.swift; path = "robobo-remote-control-ios/Classes/CommandQueue.swift"; sourceTree = "<group>"; };
 		311546DA96630C00FA566F87426BCE1E /* robobo-framework-ios-pod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "robobo-framework-ios-pod.modulemap"; sourceTree = "<group>"; };
-		31B00219D7BC11567FE6792789BDD121 /* Pods_robobo_remote_control_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_robobo_remote_control_ios_Tests.framework; path = "Pods-robobo-remote-control-ios_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B00219D7BC11567FE6792789BDD121 /* Pods_robobo_remote_control_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robobo_remote_control_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D66C97527CE4D99137DDABD17B66A3E /* Pods-robobo-remote-control-ios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-robobo-remote-control-ios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		43F1B844E44D5A087C31F8C953D5AF33 /* Pods-robobo-remote-control-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robobo-remote-control-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		447657CFBA74BC3AF9148A43D89A0420 /* Pods-robobo-remote-control-ios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-robobo-remote-control-ios_Tests.modulemap"; sourceTree = "<group>"; };
 		460233EDC986A04F34CEE87995178F57 /* robobo-framework-ios-pod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "robobo-framework-ios-pod-dummy.m"; sourceTree = "<group>"; };
 		468DBA5791C5DDB913BF0D96A174AFD7 /* RemoteModuleError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteModuleError.swift; path = "robobo-remote-control-ios/Classes/RemoteModuleError.swift"; sourceTree = "<group>"; };
-		5028C6BFAC357BAE388601A75F2F35B3 /* robobo-remote-control-ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "robobo-remote-control-ios.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5028C6BFAC357BAE388601A75F2F35B3 /* robobo-remote-control-ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "robobo-remote-control-ios.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		579387F7E585977212233263E81AA92B /* ICommandExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICommandExecutor.swift; path = "robobo-remote-control-ios/Classes/ICommandExecutor.swift"; sourceTree = "<group>"; };
 		608C957EBBE55228E840CEC8C7D1F04A /* Pods-robobo-remote-control-ios_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-robobo-remote-control-ios_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		627CA87FF771302357036EB503147879 /* robobo_framework_ios_pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = robobo_framework_ios_pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +105,7 @@
 		647086B4040E8A9B15A3AEA56C459C90 /* Pods-robobo-remote-control-ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robobo-remote-control-ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		68B6010028B002217C3245E0F489DB44 /* RoboboJSONEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoboboJSONEncoder.swift; path = "robobo-remote-control-ios/Classes/RoboboJSONEncoder.swift"; sourceTree = "<group>"; };
 		6B42AFB63BA8D4BCE28597A5A2A1EE6B /* robobo-framework-ios-pod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "robobo-framework-ios-pod-umbrella.h"; sourceTree = "<group>"; };
-		72A7238A2B1D8700D3F77FA1889AEA6A /* robobo_framework_ios_pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = robobo_framework_ios_pod.framework; path = "robobo-framework-ios-pod.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A7238A2B1D8700D3F77FA1889AEA6A /* robobo_framework_ios_pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = robobo_framework_ios_pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790BD7A476A815C3B47833C451C264E1 /* robobo-remote-control-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "robobo-remote-control-ios-dummy.m"; sourceTree = "<group>"; };
 		83909859054DAF1F9341DA9ADB4C4319 /* Status.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Status.swift; path = "robobo-remote-control-ios/Classes/Status.swift"; sourceTree = "<group>"; };
 		8769574939478D24BE7FDA949E9ADC0D /* CommandSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandSanitizer.swift; path = "robobo-remote-control-ios/Classes/CommandSanitizer.swift"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		8DD3B2DD8FF3237476A3A1217F245EF7 /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = "robobo-framework-ios-pod/Classes/logger/LogLevel.swift"; sourceTree = "<group>"; };
 		98C6A83B523F86B00503DF25B3F6069A /* IRemoteControlProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IRemoteControlProxy.swift; path = "robobo-remote-control-ios/Classes/IRemoteControlProxy.swift"; sourceTree = "<group>"; };
 		99000A73AB6307539D4EB338C12733D1 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = "robobo-framework-ios-pod/Classes/logger/Logger.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A110D8253AEA05A22B699FE789477E1C /* RemoteControlModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteControlModule.swift; path = "robobo-remote-control-ios/Classes/RemoteControlModule.swift"; sourceTree = "<group>"; };
 		A57B1FD6C4750D2AA9F49B0725BA74A6 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = "robobo-remote-control-ios/Classes/Value.swift"; sourceTree = "<group>"; };
 		A97C61849826270ECFB171155A8ED59F /* RoboboManagerState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoboboManagerState.swift; path = "robobo-framework-ios-pod/Classes/RoboboManagerState.swift"; sourceTree = "<group>"; };
@@ -124,20 +124,20 @@
 		B1F336B5F19D320288D283EAD28FA34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B3008DA8A2B276EB81DBFE692B41A1B4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "robobo-remote-control-ios/Classes/Response.swift"; sourceTree = "<group>"; };
 		B39BA22A868A8B76A488294B3538B632 /* Pods-robobo-remote-control-ios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-robobo-remote-control-ios_Tests-dummy.m"; sourceTree = "<group>"; };
-		B948DACB10CDFA0E67849FA12246546F /* Pods_robobo_remote_control_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_robobo_remote_control_ios_Example.framework; path = "Pods-robobo-remote-control-ios_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96B0D1F5C27AA40CA6D5CE0EF934907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B948DACB10CDFA0E67849FA12246546F /* Pods_robobo_remote_control_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robobo_remote_control_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96B0D1F5C27AA40CA6D5CE0EF934907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE1B9EA1E183D53C49E83126A2241F8D /* robobo-remote-control-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "robobo-remote-control-ios.xcconfig"; sourceTree = "<group>"; };
 		C4323AF3A41109F6DAEA1E142AFBFF14 /* FrameworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameworkError.swift; path = "robobo-framework-ios-pod/Classes/FrameworkError.swift"; sourceTree = "<group>"; };
 		CD6BA00AA66DA2BBAEACDBEAEB08DB88 /* Pods-robobo-remote-control-ios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robobo-remote-control-ios_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DB17B7C8D2E9E4BDA9C35B98C13685DF /* Pods-robobo-remote-control-ios_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-robobo-remote-control-ios_Example-umbrella.h"; sourceTree = "<group>"; };
-		E5BC1A9A6C7AD9BC2C71B5339D870643 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E5BC1A9A6C7AD9BC2C71B5339D870643 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E8121D337B609C4EAE64032D4E11FBFB /* CommandQueueProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandQueueProcessor.swift; path = "robobo-remote-control-ios/Classes/CommandQueueProcessor.swift"; sourceTree = "<group>"; };
 		ED7AB0D2796596B99BDFB9858019C4F8 /* Pods-robobo-remote-control-ios_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robobo-remote-control-ios_Tests-Info.plist"; sourceTree = "<group>"; };
 		EE91CF5749D841A6077FDD27EA317415 /* IModuleDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IModuleDelegate.swift; path = "robobo-framework-ios-pod/Classes/delegation/IModuleDelegate.swift"; sourceTree = "<group>"; };
 		EFC4CAAD00B68E4B3CC06B479D69D1AA /* Pods-robobo-remote-control-ios_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-robobo-remote-control-ios_Example-dummy.m"; sourceTree = "<group>"; };
 		F18CC4B080185E75635899DA28B12F0C /* IModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IModule.swift; path = "robobo-framework-ios-pod/Classes/IModule.swift"; sourceTree = "<group>"; };
 		F3A0BCBBFF2587AE34779FFF14883324 /* Pods-robobo-remote-control-ios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-robobo-remote-control-ios_Example.modulemap"; sourceTree = "<group>"; };
-		F68E73F1FC812DE9EB7D5BB978866367 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "robobo-remote-control-ios/Classes/Command.swift"; sourceTree = "<group>"; };
+		F68E73F1FC812DE9EB7D5BB978866367 /* RemoteCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteCommand.swift; path = "robobo-remote-control-ios/Classes/RemoteCommand.swift"; sourceTree = "<group>"; };
 		F6DD6880556C1A37A30A20D94FEB51EE /* Pods-robobo-remote-control-ios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-robobo-remote-control-ios_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F94DF59FBB07A04A72C7F4A9EEAD336A /* Pods-robobo-remote-control-ios_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robobo-remote-control-ios_Example-Info.plist"; sourceTree = "<group>"; };
 		FC1D04009DC037344E622B83BCFB3BE3 /* Pods-robobo-remote-control-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robobo-remote-control-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		391EF8BEF04BAB9ED164230A9C06905E /* robobo-remote-control-ios */ = {
 			isa = PBXGroup;
 			children = (
-				F68E73F1FC812DE9EB7D5BB978866367 /* Command.swift */,
+				F68E73F1FC812DE9EB7D5BB978866367 /* RemoteCommand.swift */,
 				285EC5BA48B10DB83FA00B11BD9974C0 /* CommandQueue.swift */,
 				E8121D337B609C4EAE64032D4E11FBFB /* CommandQueueProcessor.swift */,
 				8769574939478D24BE7FDA949E9ADC0D /* CommandSanitizer.swift */,
@@ -347,7 +347,6 @@
 				A97C61849826270ECFB171155A8ED59F /* RoboboManagerState.swift */,
 				C14B9A7EC53BA7202D63403D80352D19 /* Support Files */,
 			);
-			name = "robobo-framework-ios-pod";
 			path = "robobo-framework-ios-pod";
 			sourceTree = "<group>";
 		};
@@ -487,6 +486,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19EDA09FEBAAE5EF1721D09CDDE5C43E /* Command.swift in Sources */,
+				19EDA09FEBAAE5EF1721D09CDDE5C43E /* RemoteCommand.swift in Sources */,
 				697073B5F5C6BA8698D783DF5B28551F /* CommandQueue.swift in Sources */,
 				F536A672A04ED6F586F7EBA6AB731719 /* CommandQueueProcessor.swift in Sources */,
 				E9A18755E408BA3274477EAA0C2AC2BF /* CommandSanitizer.swift in Sources */,
@@ -673,8 +673,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

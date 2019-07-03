@@ -9,7 +9,7 @@
 import UIKit
 
 class CommandQueue: NSObject {
-    var commands: [Command] = []
+    var commands: [RemoteCommand] = []
     let commandLimit: Int = 100
     
     override init() {
@@ -19,7 +19,7 @@ class CommandQueue: NSObject {
     
     
     
-    func put (_ command: Command){
+    func put (_ command: RemoteCommand){
         if (commands.count < commandLimit){
         commands.append(command)
         } else {
@@ -27,11 +27,11 @@ class CommandQueue: NSObject {
         }
     }
     
-    func take() throws -> Command{
+    func take() throws -> RemoteCommand{
         if isEmpty(){
             throw RemoteModuleError.commandQueueEmpty
         }else{
-            let c : Command = commands.first!
+            let c : RemoteCommand = commands.first!
             commands.remove(at: 0)
             return c
         }

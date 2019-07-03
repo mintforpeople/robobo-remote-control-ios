@@ -43,7 +43,7 @@ class ViewController: UIViewController, RoboboManagerDelegate {
     
     @IBAction func Ontouch(_ sender: UIButton) {
         manager.log("TOUCHY")
-        var c: Command = Command("TEST",0,[:])
+        var c: RemoteCommand = RemoteCommand("TEST",0,[:])
         manager.log("COMMAND")
         do{
             
@@ -80,7 +80,7 @@ class ViewController: UIViewController, RoboboManagerDelegate {
 }
 
 class Exec: NSObject, ICommandExecutor {
-    func executeCommand(_ c: Command, _ rcmodule: IRemoteControlModule) {
+    func executeCommand(_ c: RemoteCommand, _ rcmodule: IRemoteControlModule) {
         print(c)
     }
     

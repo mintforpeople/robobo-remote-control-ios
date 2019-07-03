@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'robobo-remote-control-ios'
-    s.version          = '0.1.3'
+    s.version          = '0.1.4'
     s.summary          = 'Robobo remote module'
     s.swift_version    = '4.2'
     

@@ -58,7 +58,7 @@ class RemoteControlModule: NSObject, IRemoteControlModule {
 
     }
     
-    func queueCommand(_ command: Command) {
+    func queueCommand(_ command: RemoteCommand) {
         do {
             try commandQueueProcessor.put(command)
         } catch  {

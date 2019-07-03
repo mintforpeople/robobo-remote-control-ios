@@ -45,7 +45,7 @@ class CommandQueueProcessor: NSObject {
         var i = 0
         while !interrupted {
             usleep(1000)
-            var command: Command! 
+            var command: RemoteCommand! 
             i = i+1
             
             do {
@@ -95,7 +95,7 @@ class CommandQueueProcessor: NSObject {
         }
     }
     
-    func put(_ command: Command) throws{
+    func put(_ command: RemoteCommand) throws{
         if (interrupted){
             throw RemoteModuleError.commandCannotBeAdded
         }
