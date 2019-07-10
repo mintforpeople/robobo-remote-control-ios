@@ -8,7 +8,8 @@
 
 import UIKit
 
-public protocol IRemoteControlProxy: NSObject {
+public protocol IRemoteControlProxy: NSObjectProtocol
+ {
 
     func notifyStatus(_ status:Status)
     func notifyResponse(_ response:Response)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ICommandExecutor: NSObject {
+public protocol ICommandExecutor: NSObjectProtocol {
     
    func executeCommand(_ c:RemoteCommand, _ rcmodule:IRemoteControlModule)
 
