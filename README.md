@@ -1,10 +1,5 @@
 # robobo-remote-control-ios
 
-
-[![Version](https://img.shields.io/cocoapods/v/robobo-remote-control-ios.svg?style=flat)](https://cocoapods.org/pods/robobo-remote-control-ios)
-[![License](https://img.shields.io/cocoapods/l/robobo-remote-control-ios.svg?style=flat)](https://cocoapods.org/pods/robobo-remote-control-ios)
-[![Platform](https://img.shields.io/cocoapods/p/robobo-remote-control-ios.svg?style=flat)](https://cocoapods.org/pods/robobo-remote-control-ios)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
