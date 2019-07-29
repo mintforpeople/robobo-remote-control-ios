@@ -125,7 +125,7 @@ luis.llamas@mintforpeople.com
 
 robobo-remote-control-ios is available under the Apache 2.0 license. See the LICENSE file for more info.
 
-***
+## Acknowledgement
 <!-- 
     ROSIN acknowledgement from the ROSIN press kit
     @ https://github.com/rosin-project/press_kit
