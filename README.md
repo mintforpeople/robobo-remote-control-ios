@@ -1,6 +1,6 @@
 # robobo-remote-control-ios
 
-The Robobo Remote Control module is the core of the reomote communications system of the Robobo platform. This module acts as a relay for the messages received (encoded in JSON), decodes them and sends them to the module that registered that command. It also encodes the different status provided by the sensing modules of the robot and sends them encoded in JSON through a module implementing the ```IRemoteControlProxy``` protocol, this is because the remote control module is technology-agnostic, and the actual connection with the external clients is provided by the remote proxy's. 
+The Robobo Remote Control module is the core of the remote communications system of the Robobo platform. This module acts as a relay for the messages received (encoded in JSON), decodes them and sends them to the module that registered that command. It also encodes the different status provided by the sensing modules of the robot and sends them encoded in JSON through a module implementing the ```IRemoteControlProxy``` protocol, this is because the remote control module is technology-agnostic, and the actual connection with the external clients is provided by the remote proxy's. 
 
 
 
